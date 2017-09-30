@@ -50,3 +50,4 @@ console.log('The user answered Question 5:' + question5);
 {
   alert('Front End Web Developer is Alison\'s dream job. Thanks ' + user + ' for playing along');
 }
+// things
