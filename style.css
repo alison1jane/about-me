@@ -1,0 +1,54 @@
+
+p {
+  color: black;
+  width: 100px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #E9AAF2;
+    width: 90%;
+    margin: 0 auto;}
+
+#header {
+    overflow: auto;
+    background-color: #93FEE8;
+  }
+
+#MainTopImage {
+  height: 50px;
+  width; auto;
+  background-color: red;
+}
+
+#nav {
+  background-color: #AAF2C2;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:10px;}
+
+.column {
+  display:inline-block;
+  font-family: cursive;
+  background-color: pink;
+  width: 30x0px;
+  padding: 5px;
+  margin: 10px;
+}
+
+li {
+  disply: inline;
+  background-color: pink;
+  width; 300px;
+  float:left;
+  padding: 5px;
+  margin: 10px;
+}
+
+#footer {
+  display:inline-block;
+  float:left;
+  padding: 5px;
+  margin: 10px;
+}
