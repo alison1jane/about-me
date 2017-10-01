@@ -48,19 +48,19 @@ var question5 = prompt('Almost done, what is my dream profession?');
 console.log('The user answered Question 5:' + question5);
 alert('Front End Web Developer is Alison\'s dream job.');
 
-var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?');
-console.log(answer);
-
-var countriesVisited = ['France', 'Turkey', 'Moorea', 'Greece', 'Scotland', 'Australia'];
-
-for (var i = 0; i < 7; i++) {
-  console.log(countriesVisited[i]);
-  alert('Thanks ' + user + ' for playing along');
-}
-if (answer === 'France' || answer === 'Turkey' || answer === 'Moorea' || answer === 'Greece' || answer === 'Scotland' || answer === 'Australia') {
-  //if it's correct give them a point
-  userPoints++;
-} else {
-  alert('Nope, try again.');
-}
-alert('you have ' + userPoints + ' points.');
+var countriesVisited = ['france', 'turkey',
+  'moorea', 'greece', 'scotland', 'australia'];
+var promptExit = true;
+for (var i = 0; i < 8 && promptExit; i++) {
+  var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
+  console.log(answer);
+  if (answer === countriesVisited[0] || answer === countriesVisited[1] || answer === countriesVisited[2] || answer === countriesVisited[3] ) {
+    alert('Great, ' + answer + 'is correct');
+    promptExit = false;
+  }else if (i === 7){
+    alert('You are out of attempts');
+  }
+  else{
+    alert('Keep trying');
+  }
+};
