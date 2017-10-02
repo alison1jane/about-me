@@ -28,17 +28,19 @@ body {
   padding-right: 10px;
   margin:10px;}
 
+/*I need help to align my 3 columns along the top edge. I also want the "title of each column to be centered within each column" */
 .column {
   display:inline-block;
+  text-align: left;
   font-family: cursive;
   background-color: pink;
-  width: 30x0px;
+  width: 300px;
   padding: 5px;
   margin: 10px;
 }
 
-li {
-  disply: inline;
+.li {
+  display:inline-block;
   background-color: pink;
   width; 300px;
   float:left;
