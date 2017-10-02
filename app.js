@@ -5,7 +5,7 @@ console.log('The user\'s name is ' + user);
 
 alert('Hi ' + user + '! I am so glad you want to play my game.');
 
-var answer1 = prompt(user + ', this is a yes/no quesion so please answer with a Y or N. Do I like to hike?').toLowerCase();
+var answer1 = prompt(user + ', this is a yes/no quesion so please answer with a Y or N. Does Alison like to hike?').toLowerCase();
 console.log('The user answered Question 1:' + answer1);
 
 if(answer1 === 'y') {
@@ -16,7 +16,7 @@ if(answer1 === 'y') {
 
 alert('Let\'s keep going, but answer Y or N, ok? There are rules to follow.');
 
-var question2 = prompt('So, ' + user + ' Do I have children? Please answer with a Y or N').toLowerCase();
+var question2 = prompt('So, ' + user + ' Does she have children? Please answer with a Y or N').toLowerCase();
 
 console.log('The user answered Question 2:' + question2);
 
@@ -55,7 +55,7 @@ for (var i = 0; i < 8 && promptExit; i++) {
   var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
   console.log(answer);
   if (answer === countriesVisited[0] || answer === countriesVisited[1] || answer === countriesVisited[2] || answer === countriesVisited[3] ) {
-    alert('Great, ' + answer + 'is correct');
+    alert('Great, ' + answer + ' is correct');
     promptExit = false;
   }else if (i === 7){
     alert('You are out of attempts');
