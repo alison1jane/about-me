@@ -1,7 +1,10 @@
-
+img {
+  width:600px;
+}
 p {
   color: black;
   width: 100px;
+  font-family:'Shadows Into Light', cursive;
 }
 
 body {
@@ -12,17 +15,17 @@ body {
 
 #header {
     overflow: auto;
-    background-color: #93FEE8;
+    background-color: #fffff0;
   }
 
-/* hide this top image place holder for now */
 #MainTopImage {
-  height: 300px;
-  width; auto;
+  /*height: 550px;*/
+  width: 1060;
+  float: left;
 }
 /* I can't get my nav sections to line up in-line*/
 #nav {
-  background-color: #AAF2C2;
+  background-color: #AAF2C2A;
   padding: 10px 0px 5px 0px;
   margin-top:20px;
   text-position: relative;}

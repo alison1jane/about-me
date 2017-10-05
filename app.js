@@ -1,5 +1,6 @@
 'use strict';
 var userPoints = 0;
+
 var user = prompt('Well Hello, please introduce yourself');
 console.log('The user\'s name is ' + user);
 
@@ -16,8 +17,8 @@ if(answer1 === 'y') {
 
 alert('Let\'s keep going, but answer Y or N, ok? There are rules to follow.');
 
-for (var i = 0; i < foodsILike.length; i++) {
- + console.log(foodsILike[i]);
+for (var i = 0; i <= 7; i++) {
+ + console.log(answer1[i]);
  userPoints++;
  alert('you have ' + userPoints + ' points.');
 
@@ -36,8 +37,10 @@ if(question2 === 'y') {
 }
   //if it's not correct, tell them to try again
   alert('Nope, try again.');
-
-  alert('you have ' + userPoints + ' points.');
+  for (var i = 0; i <= 6; i++) {
+   + console.log(answer1[i]);
+   userPoints++;
+   alert('you have ' + userPoints + ' points.');
 
 var question3 = prompt('Next question, Am I a Husky?').toLowerCase();
 
@@ -49,19 +52,45 @@ if(question3 === 'y') {
 } else if(question2 === 'n') {
   alert('That is right, Alison is in fact a Duck, no way a Husky!');
 }
+for (var i = 0; i <= 5; i++) {
+ + console.log(answer1[i]);
+ userPoints++;
+ alert('you have ' + userPoints + ' points.');
+ }
 var question4 = prompt('Next question, what is my go-to free time activity?');
 
 console.log('The user answered Question 4:' + question4);
 alert('Hiking is the only way to go! ');
+
+for (var i = 0; i <= 4; i++) {
+ + console.log(answer1[i]);
+ userPoints++;
+ alert('you have ' + userPoints + ' points.');
+ }
 
 var question5 = prompt('Almost done, what is my dream profession?');
 
 console.log('The user answered Question 5:' + question5);
 alert('Front End Web Developer is Alison\'s dream job.');
 
-var countriesVisited = ['france', 'turkey',
-  'moorea', 'greece', 'scotland', 'australia'];
+for (var i = 0; i <= 3; i++) {
+ + console.log(answer1[i]);
+ userPoints++;
+ alert('you have ' + userPoints + ' points.');
+ }
+
+ var question6 = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
+  if userAnswer === 5 {
+    document.write('You know her well! Alison has 5 children.')
+  } else {
+    document.write('Try again, you have 5 more attempts');
+  }
+
+ console.log('The user answered Question 6:' + question6);
+ alert('You know her well! Alison has 5 children.');
+var question6 = ['5', 'five'];
 var promptExit = true;
+
 for (var i = 0; i < 8 && promptExit; i++) {
   var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
   console.log(answer);
@@ -73,4 +102,9 @@ for (var i = 0; i < 8 && promptExit; i++) {
   }
   else{
     alert('Keep trying');
-  };
+  }
+  for (var i = 0; i <= 2; i++) {
+   + console.log(answer1[i]);
+   userPoints++;
+   alert('you have ' + userPoints + ' points.');
+   }
