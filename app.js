@@ -21,44 +21,44 @@ alert('Hi ' + user + '! I am so glad you want to play my game.');
 // hike();
 
 //Question 2
-function children() {
-  var children = prompt('So, ' + user + ' Do I have children? Please answer with a Y or N').toLowerCase();
-  console.log('The user answered Question 2:' + children);
-  if (children === 'y') {
-    userPoints++;
-    alert('Good guess! Alison does have children. Your score is ' + userPoints);
-  } else {
-    alert('She sure does, 5 in fact and they all have flown the nest!');
-  }
-}
-children();
+// function children() {
+//   var children = prompt('So, ' + user + ' Do I have children? Please answer with a Y or N').toLowerCase();
+//   console.log('The user answered Question 2:' + children);
+//   if (children === 'y') {
+//     userPoints++;
+//     alert('Good guess! Alison does have children. Your score is ' + userPoints);
+//   } else {
+//     alert('She sure does, 5 in fact and they all have flown the nest!');
+//   }
+// }
+// children();
 
 // //Question 3:
-// var question3 = prompt('Next question, Am I a Husky?').toLowerCase();
-// console.log('The user answered Question 3:' + question3);
-//
-// if(question3 === 'y') {
-//
-//   alert('Nope! Alison is a Duck and proud of that, QUACK!');
-// } else if(question2 === 'n') {
-//   alert('That is right, Alison is in fact a Duck, no way a Husky!');
+// function noWayHusky() {
+//   var husky = prompt('Next question, Am I a Husky?').toLowerCase();
+//   console.log('The user answered Question 3:' + husky);
+//   if (husky === 'y') {
+//     alert('Nope! Alison is a Duck and proud of that, QUACK!');
+//   } else {
+//     userPoints++;
+//     alert('That is right, Alison is in fact a Duck, no way a Husky! Your score is ' + userPoints);
+//   }
 // }
-// for (var i = 0; i <= 5; i++) {
-//   console.log(answer1[i]);
-//   userPoints++;
-//   alert('you have ' + userPoints + ' points.');
-// }
-// //Question 4:
-// var question4 = prompt('Next question, what is my go-to free time activity?');
-//
-// console.log('The user answered Question 4:' + question4);
-// alert('Hiking is the only way to go! ');
-//
-// for (var i = 0; i <= 4; i++) {
-//   console.log(answer1[i]);
-//   userPoints++;
-//   alert('you have ' + userPoints + ' points.');
-// }
+// noWayHusky ();
+
+//Question 4:
+function freeTime() {
+  var freeTime = prompt('Next question, what is my go-to free time activity?');
+  console.log('The user answered Question 4:' + freeTime);
+  if (freeTime === 'working out') {
+    userPoints++;
+    alert('I love Working OUT! Your score is ' + userPoints);
+  } else {
+    alert('Sorry, spend more time with Alison and you might get this one right');
+  }
+}
+freeTime();
+
 // //Question 5:
 // var question5 = prompt('Almost done, what is my dream profession?');
 // console.log('The user answered Question 5:' + question5);
