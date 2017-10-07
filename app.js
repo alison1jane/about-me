@@ -47,28 +47,31 @@ alert('Hi ' + user + '! I am so glad you want to play my game.');
 // noWayHusky ();
 
 //Question 4:
-function freeTime() {
-  var freeTime = prompt('Next question, what is my go-to free time activity?');
-  console.log('The user answered Question 4:' + freeTime);
-  if (freeTime === 'working out') {
-    userPoints++;
-    alert('I love Working OUT! Your score is ' + userPoints);
-  } else {
-    alert('Sorry, spend more time with Alison and you might get this one right');
-  }
-}
-freeTime();
+// function freeTime() {
+//   var freeTime = prompt('Next question, what is my go-to free time activity?').toLowerCase();
+//   console.log('The user answered Question 4:' + freeTime);
+//   if (freeTime === 'working out') {
+//     userPoints++;
+//     alert('I love Working OUT! Your score is ' + userPoints);
+//   } else {
+//     alert('Sorry, spend more time with Alison and you might get this one right');
+//   }
+// }
+// freeTime();
 
 // //Question 5:
-// var question5 = prompt('Almost done, what is my dream profession?');
-// console.log('The user answered Question 5:' + question5);
-// alert('Front End Web Developer is Alison\'s dream job.');
-//
-// for (var i = 0; i <= 3; i++) {
-//   console.log(answer1[i]);
-//   userPoints++;
-//   alert('you have ' + userPoints + ' points.');
-// }
+function profession() {
+  var profession = prompt('Almost done, what is my dream profession?').toLowerCase();
+  console.log('The user answered Question 5:' + profession);
+  if (profession === 'web developer') {
+    userPoints++;
+    alert('You nailed it! Web Developer is the way to go. Your score is ' + userPoints);
+  } else {
+    alert('Actually Web Developer is Alison\'s dream job.');
+  }
+}
+profession();
+
 // //Question 6
 // var question6 = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
 // if (question6 === 5) {
