@@ -1,44 +1,56 @@
-
+img {
+  width:953px;
+}
 p {
   color: black;
-  width: 100px;
+  width: auto;
+  font-family:'Shadows Into Light', cursive;
 }
 
 body {
     font-family: sans-serif;
-    background-color: #E9AAF2;
+    background-color: white;
     width: 90%;
     margin: 0 auto;}
 
 #header {
     overflow: auto;
-    background-color: #93FEE8;
+    background-color: #fffff0;
   }
 
 #MainTopImage {
-  height: 50px;
-  width; auto;
-  background-color: red;
+  /*height: 550px;*/
+  width: 1060;
+  float: left;
 }
-
+/* I can't get my nav sections to line up in-line*/
 #nav {
-  background-color: #AAF2C2;
-  padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin:10px;}
+  background-color: #AAF2C2A;
+  padding: 10px 0px 5px 0px;
+  margin-top:20px;
+  text-position: relative;}
 
+.navtabs{
+  width:980px;
+  margin:0 auto;
+  text-align:center
+  display:inline-block;
+  padding:10px;
+  }
+
+/*I need help to align my 3 columns along the top edge. I also want the "title" of each column to be centered within each column */
 .column {
   display:inline-block;
+  text-align: left;
   font-family: cursive;
   background-color: pink;
-  width: 30x0px;
+  width: 300px;
   padding: 5px;
   margin: 10px;
 }
 
-li {
-  disply: inline;
+.li {
+  display:inline-block;
   background-color: pink;
   width; 300px;
   float:left;
