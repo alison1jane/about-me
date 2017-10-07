@@ -73,46 +73,47 @@ alert('Hi ' + user + '! I am so glad you want to play my game.');
 // profession();
 
 // //Question 6
-function numChildren() {
-  var i = 0;
-  while (i < 6) {
-    var numChildren = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
-    numChildren = parseInt(numChildren);
-    console.log('The user answered Question 6: ' + numChildren);
-    if (numChildren === 5) {
-      userPoints++;
-      alert('You know her well! Alison has 5 children. Your score is ' + userPoints);
-      i = 6;
+// function numChildren() {
+//   var i = 0;
+//   while (i < 6) {
+//     var numChildren = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
+//     numChildren = parseInt(numChildren);
+//     console.log('The user answered Question 6: ' + numChildren);
+//     if (numChildren === 5) {
+//       userPoints++;
+//       alert('You know her well! Alison has 5 children. Your score is ' + userPoints);
+//       i = 6;
+//     } else {
+//       i++;
+//       alert('Try again, guess number ' + i + ' of 6 attempts.');
+//     }
+//     if (i === 6) {
+//       alert('Sorry ' + user + ', I actually have 5 children.');
+//     }
+//   }
+// }
+// numChildren();
+//
+// //Question7
+function countriesVisited() {
+  var countriesVisited = ['tahiti', 'australia', 'greece', 'france', 'st. barts'];
+  for (var i = 0; i < 8 && promptExit; i++) {
+    var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
+    console.log(answer);
+    if (answer === countriesVisited[0] || answer === countriesVisited[1] || answer === countriesVisited[2] || answer === countriesVisited[3] || answer === countriesVisited[4] || answer === countriesVisited[5]) {
+
+      alert('Great, ' + answer + 'is correct');
+      promptExit = false;
+    } else if (i === 7) {
+      alert('You are out of attempts');
     } else {
-      i++;
-      alert('Try again, guess number ' + i + ' of 6 attempts.');
+      alert('Keep trying');
     }
-    if (i === 6) {
-      alert('Sorry ' + user + ', I actually have 5 children.');
+    for (var i = 0; i <= 2; i++) {
+      console.log(answer[i]);
+      userPoints++;
+      alert('you have ' + userPoints + ' points.');
     }
   }
 }
-numChildren();
-//
-// //Question7
-// for (var i = 0; i < 8 && promptExit; i++) {
-//   var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
-//   console.log(answer);
-//
-//   if (answer === countriesVisited[0] || answer === countriesVisited[1] || answer === countriesVisited[2] || answer === countriesVisited[3] || answer === countriesVisited[4] || answer === countriesVisited[5]) {
-//
-//     alert('Great, ' + answer + 'is correct');
-//     promptExit = false;
-//   }else if (i === 7){
-//
-//     alert('You are out of attempts');
-//   }
-//   else{
-//     alert('Keep trying');
-//   }
-//   for (var i = 0; i <= 2; i++) {
-//     console.log(answer1[i]);
-//     userPoints++;
-//     alert('you have ' + userPoints + ' points.');
-//   }
-// }
+countriesVisited();
