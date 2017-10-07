@@ -6,40 +6,33 @@ var user = prompt('Well Hello, please introduce yourself.');
 console.log('The user\'s name is ' + user);
 alert('Hi ' + user + '! I am so glad you want to play my game.');
 
-//Question 1
-function hike() {
-  var answer1 = prompt(user + ', this is a yes/no quesion so please answer with a Y or N. Do I like to hike?').toLowerCase();
-  console.log('The user answered Question 1:' + answer1);
-  //If/Else for question 1
-  if (answer1 === 'y') {
+// // //Question 1
+// function hike() {
+//   var hike = prompt(user + ', this is a yes/no quesion so please answer with a Y or N. Do I like to hike?').toLowerCase();
+//   console.log('The user answered Question 1:' + hike);
+//   //If/Else for question 1
+//   if (hike === 'y') {
+//     userPoints++;
+//     alert('Good guess! Alison does like to hike. Your score is ' + userPoints);
+//   } else {
+//     alert('of course she likes to hike.');
+//   }
+// }
+// hike();
+
+//Question 2
+function children() {
+  var children = prompt('So, ' + user + ' Do I have children? Please answer with a Y or N').toLowerCase();
+  console.log('The user answered Question 2:' + children);
+  if (children === 'y') {
     userPoints++;
-    alert('Good guess! Alison does like to hike. You have ' + userPoints + ' point.');
+    alert('Good guess! Alison does have children. Your score is ' + userPoints);
   } else {
-    alert('of course she likes to hike.');
+    alert('She sure does, 5 in fact and they all have flown the nest!');
   }
 }
-hike();
+children();
 
-// //Question 2
-// var question2 = prompt('So, ' + user + ' Do I have children? Please answer with a Y or N').toLowerCase();
-// console.log('The user answered Question 2:' + question2);
-//
-// if(question2 === 'y') {
-//   alert('Good guess! Alison does have children');
-//
-// } else if(question2 === 'n') {
-//
-//   alert('She sure does, 5 in fact and they all have flown the nest!');
-//   userPoints++;
-// } else {
-// }
-// //if it's not correct, tell them to try again
-// alert('Nope, try again.');
-// for (var i = 0; i <= 6; i++) {
-//   console.log(answer1[i]);
-//   userPoints++;
-//   alert('you have ' + userPoints + ' points.');
-// }
 // //Question 3:
 // var question3 = prompt('Next question, Am I a Husky?').toLowerCase();
 // console.log('The user answered Question 3:' + question3);
