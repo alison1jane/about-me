@@ -85,7 +85,7 @@ if (question6 === 5) {
 } else {
   document.write('Try again, you have 5 more attempts');
 }
-
+//Question7
 for (var i = 0; i < 8 && promptExit; i++) {
   var answer = prompt('Can you name some of Alison\'s favorite countries she has visited?').toLowerCase();
 
