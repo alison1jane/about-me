@@ -60,25 +60,39 @@ alert('Hi ' + user + '! I am so glad you want to play my game.');
 // freeTime();
 
 // //Question 5:
-function profession() {
-  var profession = prompt('Almost done, what is my dream profession?').toLowerCase();
-  console.log('The user answered Question 5:' + profession);
-  if (profession === 'web developer') {
-    userPoints++;
-    alert('You nailed it! Web Developer is the way to go. Your score is ' + userPoints);
-  } else {
-    alert('Actually Web Developer is Alison\'s dream job.');
-  }
-}
-profession();
+// function profession() {
+//   var profession = prompt('Almost done, what is my dream profession?').toLowerCase();
+//   console.log('The user answered Question 5: ' + profession);
+//   if (profession === 'web developer') {
+//     userPoints++;
+//     alert('You nailed it! Web Developer is the way to go. Your score is ' + userPoints);
+//   } else {
+//     alert('Actually Web Developer is Alison\'s dream job.');
+//   }
+// }
+// profession();
 
 // //Question 6
-// var question6 = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
-// if (question6 === 5) {
-//   document.write('You know her well! Alison has 5 children.');
-// } else {
-//   document.write('Try again, you have 5 more attempts');
-// }
+function numChildren() {
+  var i = 0;
+  while (i < 6) {
+    var numChildren = prompt('Almost done, how many children does Alison have? You have 6 attempts to get this right!');
+    numChildren = parseInt(numChildren);
+    console.log('The user answered Question 6: ' + numChildren);
+    if (numChildren === 5) {
+      userPoints++;
+      alert('You know her well! Alison has 5 children. Your score is ' + userPoints);
+      i = 6;
+    } else {
+      i++;
+      alert('Try again, guess number ' + i + ' of 6 attempts.');
+    }
+    if (i === 6) {
+      alert('Sorry ' + user + ', I actually have 5 children.');
+    }
+  }
+}
+numChildren();
 //
 // //Question7
 // for (var i = 0; i < 8 && promptExit; i++) {
